@@ -5,10 +5,5 @@ zeebe:
     security:
       plaintext: true
     worker:
-      default-name: demo
+      default-name: ${spring.application.name}
       default-type: io.camunda.zeebe:userTask
-
-
-
-server:
-  port: 8080
