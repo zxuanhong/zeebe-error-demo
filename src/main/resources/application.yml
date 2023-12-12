@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: tasklist-service-ee
+
 zeebe:
   client:
     broker:
@@ -7,3 +11,11 @@ zeebe:
     worker:
       default-name: ${spring.application.name}
       default-type: io.camunda.zeebe:userTask
+
+
+
+# 端口与请求前缀
+server:
+  port: 605
+  servlet:
+    context-path: /tasklist
